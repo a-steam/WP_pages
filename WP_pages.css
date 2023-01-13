@@ -38,9 +38,11 @@ h1 {
 h2 {
   font-family: "Oswald", sans-serif;
   font-weight: regular;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 25px;
   color: white;
+  text-decoration: underline dotted white;
+  text-underline-offset: .25em;
 }
 
 hr {
@@ -53,4 +55,27 @@ hr {
 
 li {
   line-height: 1.5em;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex-left {
+  flex: 0 0 50%;
+}
+
+.flex-right-top {
+  flex:auto;
+  padding-left: 5%;
+  align-self: end;
+}
+
+.flex-right-bottom {
+  flex:auto;
+  padding-left: 5%;
+  align-self: end;
 }
